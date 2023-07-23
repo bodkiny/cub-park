@@ -1,0 +1,3 @@
+## "A cub/car park"
+### A simple project showing an example of the use of the Multitone design pattern with lazy initialization.
+#### In this example, we have a CSV file with all the cars information in our park. Then, when there's a need to get an instance of our CarMultitone class, we parse our CSV file for the presence of the demanded car. If such a car doesn't exist, an exception is thrown. Otherwise, we are getting the necessary fields for the CarMultitone class via the corresponding InstanceLoader object, creating an instance of it (_**lazy initialization**_), and putting it into the HashMap for further utilization.
